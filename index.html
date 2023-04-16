@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <title>Codificador/Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Modificador/Decodificador de Texto</h1>
+      <label for="text-input">Insira o texto:</label>
+      <textarea id="text-input"></textarea>
+      <label for="code-select">Escolha a opção:</label>
+      <select id="code-select">
+        <option value="encode">Codificar</option>
+        <option value="decode">Decodificar</option>
+      </select>
+      <button id="submit-button">Aplicar</button>
+      <label for="result-output">Resultado:</label>
+      <textarea id="result-output" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
